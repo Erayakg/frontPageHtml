@@ -1,7 +1,37 @@
 <html>
 <head>
+
+   <script>
+      function yazdır()
+      {
+          console.log("merhaba dünya");
+
+       //   document.getElementById("eray").innerHTML="merhaba dünya";
+
+         window.alert("hello world");
+
+      }
+function tarih()
+{
+
+document.getElementById("akgül").innerHTML=Date();
+
+}
+
+
+
+
+</script>
+
 <style>
-   
+   .buton{
+width: 200px;
+height: 20px;
+border-radius: 10px;
+background-color: black;
+color: aliceblue;
+
+   }
    .footer {
     position: fixed;
     bottom: 0px;
@@ -46,11 +76,14 @@
   
 
 
-
    <div style="text-align: center; padding-bottom: 200px;" >
 <img style="width: 30%;"    src="picture/download.png" >
 </div>
+<div  style="padding-bottom: 200px;text-align: center;">
+   <button    id="eray" class="buton" onclick= "yazdır()"  >yazdır</button>
+   <button     onclick="tarih()"  class="buton" id="akgül" >Bugünün tarihi</button>
 
+   </div>
 <div  class="footer" style=" text-align: center;font-size: 39px;">
     
     <a class="ayırma"  style="text-decoration: none;" href="index.html">Anasayfa</a>
